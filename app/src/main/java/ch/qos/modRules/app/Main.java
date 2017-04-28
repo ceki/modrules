@@ -22,12 +22,12 @@ public class Main {
 			new ch.qos.modRules.auto.Boo();
 			break;
 		case 3:
-			invoke("ch.qos.modRules.unnamed.Boo");
+			invokeConstructor("ch.qos.modRules.unnamed.Boo");
 			break;
 		}
 	}
 
-	private static void invoke(String className) {
+	private static void invokeConstructor(String className) {
 		try {
 			Class<?> aClass = Class.forName(className);
 			Constructor<?> cons = aClass.getConstructor();
